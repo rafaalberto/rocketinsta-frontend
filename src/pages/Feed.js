@@ -51,7 +51,8 @@ class Feed extends Component {
                             </div>
                             <img src={more} alt="Mais" />
                         </header>
-                        <img src={`http://localhost:3001/files/${post.image}`} alt={post.image} />
+                        {/* <img src={`http://localhost:3001/files/${post.image}`} alt={post.image} /> */}
+                        <img src={post.image} alt={post.image} />
                         <footer>
                             <div className="actions">
                                 <button type="button" onClick={() => this.handleLike(post._id)}>
